@@ -1,7 +1,9 @@
 import { LightningElement, wire } from 'lwc';
-import getAccountList from '@salesforce/apex/AccountController.getAccountList';
+import getAccount from '@salesforce/apex/AccountController.getAccount'
 
 export default class ApexWireDemo extends LightningElement {
-    @wire(getAccountList)
-    accounts;
+
+    @wire(getAccount)
+    accounts
+   
 }

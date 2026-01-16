@@ -1,16 +1,10 @@
 <template>
-    <lightning-card title="Apex Wire Demo">
-        <div class="slds-m-around_medium">
-            <template if:true={accounts.data}> //data asel tar 
-                <template for:each={account.data} for:item="account">
-                    <div class="slds-box slds-box_xx-small" key={account.Id}>
-                        <p><strong>Name:</strong> {account.Name}</p>
-                        <p><strong>Type:</strong>{account.Type}</p>
-                        <p><strong>Industry:</strong>{account.Industry}</p>
-                    </div>
-                </template>
+    <Lightning-card title="Apex Wire to Property Demo">
+        <div class="slds-p-around_medium">
+            <template if:true={accounts.data}>
 
-            </template>
-        </div>
-    </lightning-card>
+            </template>//first check data availble or nor using if:true directive      
+          </div>
+    </Lightning-card >
+    
 </template>
